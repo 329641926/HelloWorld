@@ -17,6 +17,13 @@ void sort(int arr[], int sz) {
     }    
 }
 
+void printArr(int arr[], int sz) {
+    for(int i=0; i<=sz; i++) {
+        std::cout<< arr[i] << " ";
+    }
+    std::cout<<std::endl;
+}
+
 int main() {
     int arr[] = {12, 65, 32, 90, 85, 9, 54};
     int sz = sizeof(arr) / sizeof(arr[0]);
