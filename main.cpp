@@ -8,12 +8,18 @@ void swap(int&a, int&b)
 }
 
 void sort(int arr[], int sz) {
-    for(int i=0;i<sz-1;i++) {
+    int flag = 0; // 减少复杂度
+	for(int i=0;i<sz-1;i++) {
         for(int j=0;j<sz-1-i;j++) {
-            if(arr[j] > arr[j+1]) {
+            flag = 1;
+			if(arr[j] > arr[j+1]) {
                 swap(arr[j], arr[j+1]);    
             }
         }
+
+		if(flag == 1) {
+			break;
+		}
     }    
 }
 
