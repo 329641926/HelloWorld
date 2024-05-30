@@ -18,7 +18,7 @@ void sort(int arr[], int sz) {
 }
 
 void printArr(int arr[], int sz) {
-    for(int i=0; i<=sz; i++) {
+    for(int i=0; i<sz; i++) {
         std::cout<< arr[i] << " ";
     }
     std::cout<<std::endl;
